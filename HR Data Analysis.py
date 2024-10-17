@@ -68,5 +68,6 @@ if __name__ == '__main__':
     filtered_min_max_mean = pivot_min_max_mean[
         pivot_min_max_mean[('mean', 'last_evaluation', 0)] > pivot_min_max_mean[('mean', 'last_evaluation', 1)]
         ]
+    
     print(filtered_pivot.to_dict())
     print(filtered_min_max_mean.to_dict())
